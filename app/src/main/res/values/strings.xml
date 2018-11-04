@@ -1,7 +1,22 @@
 <resources>
     <string name="app_name">test</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
+    <string name="title_points">point buy</string>
     <string name="title_notifications">Notifications</string>
-    <string name="button_send">dice_button</string>
+    <string name="rolldice">roll dice</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="point_buy_counter"> points left - %1$s
+    </string>
+    <string name="point_buy_output">
+        \ STR - %1$s\n
+        DEX - %2$s\n
+        CON - %3$s\n
+        INT - %4$s\n
+        WIS - %5$s\n
+        CHA - %6$s\n
+    </string>
+
+
+
+
 </resources>

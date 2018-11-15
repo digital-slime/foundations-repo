@@ -17,6 +17,7 @@ public class Main2Activity extends AppCompatActivity {
     private TextView character_point_text_output;
     private int point_total;
     private int STR, DEX, CON, INT, WIS, CHA;
+    private boolean random_rolled = false;
 
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -61,12 +62,37 @@ public class Main2Activity extends AppCompatActivity {
     }
 
 
+    // buttons to increase or decrease score
+    public void raise_clicked(View view){
 
+    }
+
+    public void clear_clicked(View view){
+        if(random_rolled){
+            random_rolled = false;
+            mTextMessage.setText(getString(R.string.point_buy_counter,"27"));
+            character_point_text_output.setText(getString(R.string.point_buy_output,
+                    Integer.toString(STR),Integer.toString(DEX),Integer.toString(CON),
+                    Integer.toString(INT),Integer.toString(WIS),Integer.toString(CHA)));
+        }
+
+
+
+    }
+
+    public void lower_clicked(View view){
+
+    }
+
+
+
+    // roll for stats button
     public void rollstats(View view) {
-        mTextMessage.setText("points unused");
+        mTextMessage.setText("point buy not used, press x to clear");
         character_point_text_output.setText(getString(R.string.point_buy_output,
                 roll_stat(),roll_stat(),roll_stat(),
                 roll_stat(),roll_stat(),roll_stat()));
+        random_rolled = true;
     }
 
     // simulate rolling 4 six sided dice, then remove the lowest roll

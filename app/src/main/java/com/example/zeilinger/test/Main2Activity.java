@@ -163,29 +163,88 @@ public class Main2Activity extends AppCompatActivity {
     public void lower_clicked(View view){
         switch (stat_select_group.getCheckedRadioButtonId()) {
             case R.id.radioSTR:
-
+                if (STRval >= 7){
+                STRval--;
+                point_total += 2;
+                STR = 8 + (STRval - 1);
+            }
+                else if (STRval >= 2 ){
+                    STRval--;
+                    point_total += 1;
+                    STR = 8 + (STRval - 1);
+                }
                 Toast.makeText(Main2Activity.this,
-                        "you selected STR", Toast.LENGTH_SHORT).show();
+                        "you lowered STR", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.radioDEX:
+                if (DEXval >= 7){
+                    DEXval--;
+                    point_total += 2;
+                    DEX = 8 + (DEXval - 1);
+                }
+                else if (DEXval >= 2 ){
+                    DEXval--;
+                    point_total += 1;
+                    DEX = 8 + (DEXval - 1);
+                }
                 Toast.makeText(Main2Activity.this,
-                        "you selected DEX", Toast.LENGTH_SHORT).show();
+                        "you lowered DEX", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.radioCON:
+                if (CONval >= 7){
+                    CONval--;
+                    point_total += 2;
+                    CON = 8 + (CONval - 1);
+                }
+                else if (CONval >= 2 ){
+                    CONval--;
+                    point_total += 1;
+                    CON = 8 + (CONval - 1);
+                }
                 Toast.makeText(Main2Activity.this,
-                        "you selected CON", Toast.LENGTH_SHORT).show();
+                        "you lowered CON", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.radioINT:
+                if (INTval >= 7){
+                    INTval--;
+                    point_total += 2;
+                    INT = 8 + (INTval - 1);
+                }
+                else if (INTval >= 2 ){
+                    INTval--;
+                    point_total += 1;
+                    INT = 8 + (INTval - 1);
+                }
                 Toast.makeText(Main2Activity.this,
-                        "you selected INT", Toast.LENGTH_SHORT).show();
+                        "you lowered INT", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.radioWIS:
+                if (WISval >= 7){
+                    WISval--;
+                    point_total += 2;
+                    WIS = 8 + (WISval - 1);
+                }
+                else if (WISval >= 2 ){
+                    WISval--;
+                    point_total += 1;
+                    WIS = 8 + (WISval - 1);
+                }
                 Toast.makeText(Main2Activity.this,
-                        "you selected WIS", Toast.LENGTH_SHORT).show();
+                        "you lowered WIS", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.radioCHA:
+                if (CHAval >= 7){
+                    CHAval--;
+                    point_total += 2;
+                    CHA = 8 + (CHAval - 1);
+                }
+                else if (CHAval >= 2 ){
+                    CHAval--;
+                    point_total += 1;
+                    CHA = 8 + (CHAval - 1);
+                }
                 Toast.makeText(Main2Activity.this,
-                        "you selected CHA", Toast.LENGTH_SHORT).show();
+                        "you lowered CHA", Toast.LENGTH_SHORT).show();
                 break;
         }
         update_text();

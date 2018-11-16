@@ -86,7 +86,7 @@
             android:id="@+id/radioSTR"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30sp" />
+            android:textSize="30sp"/>
 
         <RadioButton
             android:id="@+id/radioDEX"
@@ -99,18 +99,18 @@
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/radioWIS"
+            android:id="@+id/radioINT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/radioCHA"
+            android:id="@+id/radioWIS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp" />
 
         <RadioButton
-            android:id="@+id/radioINT"
+            android:id="@+id/radioCHA"
             android:layout_width="wrap_content"
             android:layout_height="31dp"
             android:textSize="30sp" />

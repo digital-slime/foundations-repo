@@ -30,12 +30,14 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_dashboard:
                     mTextMessage.setText(R.string.title_points);
-                    Intent myintent = new Intent(MainActivity.this,Main2Activity.class);
-                    startActivity(myintent);
+                    Intent myintent2 = new Intent(MainActivity.this,Main2Activity.class);
+                    startActivity(myintent2);
 
                     return true;
                 case R.id.navigation_notifications:
                     mTextMessage.setText(R.string.title_notifications);
+                    Intent myintent3 = new Intent(MainActivity.this,Main3Activity.class);
+                    startActivity(myintent3);
                     return true;
             }
             return false;

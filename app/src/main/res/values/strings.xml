@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">test</string>
-    <string name="title_home">Home</string>
+    <string name="title_home">dice roller</string>
     <string name="title_points">point buy</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_notifications">cypher</string>
     <string name="rolldice">roll dice</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="point_buy_counter"> points left - %1$s
@@ -15,8 +15,6 @@
         WIS - %5$s\n
         CHA - %6$s\n
     </string>
-
-
 
 
 </resources>

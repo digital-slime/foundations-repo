@@ -32,13 +32,15 @@ public class Main2Activity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
                     mTextMessage.setText(R.string.title_home);
-                    Intent myintent = new Intent(Main2Activity.this,MainActivity.class);
-                    startActivity(myintent);
+                    Intent myintent1 = new Intent(Main2Activity.this,MainActivity.class);
+                    startActivity(myintent1);
                     return true;
                 case R.id.navigation_dashboard:
                     mTextMessage.setText(R.string.title_points);
                     return true;
                 case R.id.navigation_notifications:
+                    Intent myintent3 = new Intent(Main2Activity.this,Main3Activity.class);
+                    startActivity(myintent3);
                     mTextMessage.setText(R.string.title_notifications);
                     return true;
             }

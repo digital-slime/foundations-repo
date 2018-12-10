@@ -71,31 +71,20 @@ public class Main3Activity extends AppCompatActivity {
 
 
 
-        StringBuffer mod= new StringBuffer();
-        for (int i=0; i <= plaintext.length() - 1; i++) {
-
-            int offset = plaintext.length() % key.length();
-
-        }
-
-
-
-
-
         StringBuffer result= new StringBuffer();
 
         for (int i=0; i <= plaintext.length() - 1; i++)
         {
-            int s = 3;
+            int mod = 3;
 
             if (Character.isUpperCase(plaintext.charAt(i)))
             {
-                char output = (char)(((int)plaintext.charAt(i) + s - 65) % 26 + 65);
+                char output = (char)(65 +(((int)plaintext.charAt(i) + mod - 65) % 26));
                 result.append(output);
             }
             else
             {
-                char output = (char)(((int)plaintext.charAt(i) + s - 97) % 26 + 97);
+                char output = (char)(97 +(((int)plaintext.charAt(i) + mod - 97) % 26));
                 result.append(output);
             }
         }
